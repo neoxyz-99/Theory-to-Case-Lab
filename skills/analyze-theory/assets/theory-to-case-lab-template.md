@@ -1,10 +1,9 @@
 {{title}}: Theory-to-Case Lab
 
-> Evidence labels: `[P]` focal source; `[S]` verified scholarship; `[A]` reconstruction or proposed case application
 > Related notes: [[{{author}}_{{short_title}}_Reading_Note]] · [[{{author}}_{{short_title}}_Scholarly_Reception_and_Applications]]
 
 > [!tip] Reading guide
-> **Bold** marks core concepts, mechanisms, or conclusions; <mark>highlight</mark> marks findings directly useful to the user's research; <u>underline</u> marks boundaries, negations, or recurrent misreadings; *italics* preserve titles or wording-sensitive terms. Styling never replaces `[P]`, `[S]`, or `[A]` provenance.
+> `[P]` = focal or primary text; `[S]` = verified external scholarship; `[A]` = this note's reconstruction, evaluation, synthesis, or application. `[P/A]` and `[S/A]` mark short mixed claims: the slash means “source material plus analysis,” not a new source type. Prefer separating source claims from analysis; use combined labels only when a short synthesis cannot be split naturally. Labels appear only where provenance could otherwise be unclear, not before every paragraph or bullet. **Bold** marks core concepts, mechanisms, or conclusions; <mark>highlight</mark> marks findings directly useful to the user's research; <u>underline</u> marks boundaries, negations, or recurrent misreadings; *italics* preserve titles or wording-sensitive terms. Styling never replaces provenance.
 
 ## Basic Information
 
