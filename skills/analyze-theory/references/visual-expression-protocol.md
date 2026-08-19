@@ -48,14 +48,24 @@ Default maxima are two diagrams in the reading note, two in the reception note, 
 
 ## Semantic emphasis
 
-Before the first use of semantic emphasis, include a short `Reading guide` or `阅读提示`:
+Before the first use of semantic emphasis, include a short `Reading guide` or `阅读提示` that first explains provenance:
+
+- `[P]`: focal or primary text;
+- `[S]`: verified external scholarship;
+- `[A]`: analyst reconstruction, synthesis, evaluation, or application;
+- `[P/A]`: a short mixed primary-text-plus-analysis claim;
+- `[S/A]`: a short mixed scholarship-plus-synthesis claim.
+
+State that the slash marks a mixed claim, not a new source type. State that labels should appear only where provenance could otherwise be unclear; avoid paragraph-by-paragraph repetition and prefer separating source claims from analysis over combined labels.
+
+Then explain semantic emphasis:
 
 - `**bold**`: core concept, central proposition, mechanism, or conclusion;
 - `<mark>highlight</mark>`: finding directly useful to the user's research or writing;
 - `<u>underline</u>`: boundary condition, negation, or recurrent misreading;
 - `*italics*`: original-language term, title, or term whose wording matters;
 - block quotation: verified source wording with a locator;
-- `[P]`, `[S]`, `[A]`: evidence provenance, never replaced by styling.
+- evidence labels: provenance markers, never replaced by styling.
 
 Do not emphasize whole paragraphs. As a default, use no more than two emphasized spans per paragraph. Underlining must not be used as generic emphasis because readers may mistake it for a link.
 
