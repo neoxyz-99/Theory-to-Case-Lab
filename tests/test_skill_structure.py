@@ -45,7 +45,7 @@ class SkillStructureTests(unittest.TestCase):
     def test_case_templates_are_behaviorally_aligned(self):
         english = (SKILL / "assets/theory-to-case-lab-template.md").read_text(encoding="utf-8")
         chinese = (SKILL / "assets/theory-to-case-lab-template.zh-CN.md").read_text(encoding="utf-8")
-        for token in ("[P]", "[S]", "[A]", "```mermaid", "<mark>", "<u>"):
+        for token in ("[P]", "[S]", "[A]", "[P/A]", "[S/A]", "```mermaid", "<mark>", "<u>"):
             self.assertIn(token, english)
             self.assertIn(token, chinese)
         self.assertIn("Rival Explanations", english)

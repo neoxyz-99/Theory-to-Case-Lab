@@ -122,6 +122,13 @@ class ValidatorTests(unittest.TestCase):
         self.assertFalse(result["passed_structural_check"])
         self.assertTrue(any("Reading guide" in item for item in result["warnings"]))
 
+    def test_incomplete_evidence_legend_fails(self):
+        reading, _reception, _case_lab = self.bundle("en")
+        broken = self.changed_copy(reading, "`[P/A]`", "mixed primary/analysis claim")
+        result = VALIDATOR.validate(broken, "reading")
+        self.assertFalse(result["passed_structural_check"])
+        self.assertIn("[P/A]", result["visual_validation"]["missing_evidence_legend_labels"])
+
     def test_unresolved_placeholder_fails(self):
         reading, _reception, _case_lab = self.bundle("en")
         broken = self.changed_copy(reading, "- Title: Relational Gatekeeping", "- Title: {{title}}")
