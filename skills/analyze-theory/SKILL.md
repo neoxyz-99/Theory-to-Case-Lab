@@ -32,8 +32,10 @@ Use the language explicitly requested by the user. Otherwise match the user's la
    - `[P] Primary text`: what the theorist or focal source states.
    - `[S] Scholarship`: what an external scholar argues or finds.
    - `[A] Analysis`: the agent's reconstruction, evaluation, comparison, or application proposal.
+   - `[P/A]` or `[S/A]`: a mixed claim combining a source-grounded statement with the agent's reconstruction or synthesis.
 4. Never use `[A]` as evidence for `[P]` or `[S]`. Never invent quotations, page numbers, publication details, DOIs, or consensus.
 5. For claims attributed to a source, cite the most precise available locator: page, chapter/section, figure/table, or stable URL. If pagination is unavailable, say so.
+6. Keep provenance visible without turning the note into an audit log. Define all five labels in the opening reading guide, then use labels only at the smallest useful claim group, table row, or point of possible ambiguity. Do not prefix every paragraph or bullet. Prefer separating a source statement from the agent's interpretation over using `[P/A]` or `[S/A]`; reserve combined labels for genuinely inseparable short syntheses.
 
 Read [references/evidence-and-citation.md](references/evidence-and-citation.md) whenever the task includes external research, quotations, contested attribution, or a formal paper deliverable.
 
@@ -140,7 +142,7 @@ For the optional third file use:
 
 Cross-link every generated file with Obsidian wikilinks. Keep Author, Year, Title, and Type identical across them. If a Zotero URI is verified, render `[Open in Zotero](zotero://...)`; otherwise write `Zotero 链接待补`. Never infer a Zotero item key.
 
-Before the first diagram or semantic emphasis, include a reading guide. Before every diagram, state its analytical purpose, encoding, evidence class, and inferential limit. Use the smallest suitable form: tables for exact repeated fields and Mermaid only for structures, sequences, branches, or levels. Default limits are two diagrams in each paired note and three in the Case Lab. Do not create an interactive artifact unless the user requests one.
+Before the first diagram or semantic emphasis, include a reading guide that defines `[P]`, `[S]`, `[A]`, `[P/A]`, and `[S/A]`, explains that the slash marks a mixed claim rather than a new source type, and states the low-noise labeling rule. Before every diagram, state its analytical purpose, encoding, evidence class, and inferential limit. Use the smallest suitable form: tables for exact repeated fields and Mermaid only for structures, sequences, branches, or levels. Default limits are two diagrams in each paired note and three in the Case Lab. Do not create an interactive artifact unless the user requests one.
 
 The second file always requires external scholarly research. Record the search date, tools or databases, query families, inclusion logic, and access limits. Use a purposeful representative review unless the user requests a systematic review or bibliometric study. If little scholarship is accessible, still create the file, state the negative or limited search result precisely, separate verified references from leads, and do not invent reception, applications, consensus, or citations.
 
@@ -174,6 +176,7 @@ Before delivery, verify:
 13. Every diagram has a purpose callout, an evidence-class label, an inferential limit, and a short prose interpretation.
 14. Bold, highlight, underline, and italics follow the semantic roles in the visual-expression protocol and do not replace `[P]`, `[S]`, or `[A]`.
 15. When a Case Lab is present, all three notes agree bibliographically, link to one another, select an epistemically appropriate pathway, and include rival accounts, disconfirming evidence, and boundaries.
+16. The body uses provenance labels sparingly: combined labels are exceptional, and repeated paragraph-level prefixes are removed when section context and precise citations already make provenance clear.
 
 For a legacy single-file dossier, optionally run:
 

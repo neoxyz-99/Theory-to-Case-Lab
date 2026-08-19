@@ -6,15 +6,29 @@ Keep theory interpretation traceable without pretending that all scholarly judgm
 
 ## Evidence classes
 
-Use these labels in notes and evidence tables. They may be omitted from polished prose only when the distinction remains unmistakable.
+Use these labels in notes and evidence tables. They may be omitted from repeated polished prose when section context, wording, and citations keep the distinction unmistakable.
 
 | Label | Meaning | Acceptable support |
 |---|---|---|
 | `[P]` | Claim about the focal theorist or primary text | Supplied primary text or verified edition |
 | `[S]` | Claim about scholarly interpretation, application, criticism, or evidence | Verified external scholarly source |
 | `[A]` | Reconstruction, synthesis, evaluation, or proposed application | Reasoning grounded in `[P]` and/or `[S]`, explicitly identified |
+| `[P/A]` | A short mixed claim containing both a primary-text statement and the analyst's reconstruction | A precise primary-text locator plus an explicit analytical inference |
+| `[S/A]` | A short mixed claim containing both a scholarly finding and the analyst's cross-source synthesis | Verified scholarship plus an explicitly bounded synthesis |
 
 Do not cite a secondary source as though it were the theorist's own formulation when the primary text is available. When only a secondary account is accessible, write “as interpreted by…” and flag the missing primary verification.
+
+## Low-noise labeling
+
+Evidence labels are provenance aids, not sentence decorations.
+
+- Define `[P]`, `[S]`, `[A]`, `[P/A]`, and `[S/A]` once in the opening reading guide. Explain that a slash marks a mixed claim, not a fourth or fifth source type.
+- Label the smallest useful claim group: a paragraph, a compact bullet group, or an evidence-table row. Do not label every sentence, every bullet, or every paragraph when the section heading, source locator, and prose already make provenance unambiguous.
+- In a primary-text section, establish `[P]` at the section or first-claim level and keep using precise locators. Add `[A]` only where reconstruction begins.
+- In a reception section, establish `[S]` at the section or table level and cite representative sources. Add `[A]` only for the report's synthesis, comparison, or recommendation.
+- Prefer two readable sentences or paragraphs—first the source claim, then the analysis—to a repeated `[P/A]` or `[S/A]` prefix. Use a combined label only when a short mixed claim cannot be separated without losing clarity.
+- A combined label does not license the analyst's inference as something the source explicitly said, and `[S/A]` does not imply field-wide consensus.
+- For dense traceability, put one label in a claim–evidence matrix rather than reproducing labels throughout polished prose.
 
 ## Locator hierarchy
 

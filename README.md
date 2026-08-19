@@ -15,7 +15,7 @@ When a concrete research case is supplied, it adds an optional third **Theory-to
 
 Representative academic-agent projects often emphasize literature discovery, review writing, paper critique, or theory synthesis—for example [Literature Review Skills](https://github.com/xingtaxueshu/literature-review-skills), [LitReviewSkill](https://github.com/Zsun79/LitReviewSkill), and [Asta Theorizer](https://github.com/allenai/asta-theorizer). Theory-to-Case Lab overlaps with those projects at the general search, synthesis, and citation layers. Its distinctive contribution is the complete path from primary-text reconstruction to reception mapping, epistemically appropriate case explanation, and paper-ready analysis.
 
-- **Evidence provenance:** `[P]` focal or primary text, `[S]` external scholarship, and `[A]` analyst reconstruction remain visibly separate.
+- **Low-noise evidence provenance:** the reading guide defines `[P]` focal text, `[S]` external scholarship, `[A]` analyst reconstruction, and the exceptional mixed forms `[P/A]` and `[S/A]`. The body labels only points of possible ambiguity instead of prefixing every paragraph.
 - **Paired epistemic architecture:** what the work argues is not collapsed into how later scholars interpret, criticize, revise, or apply it.
 - **Mechanism before labeling:** a case is not “explained” merely because concepts have been attached to it.
 - **Plural explanatory forms:** causal, interpretive, critical, genealogical, and normative theories use different pathways.
@@ -63,7 +63,7 @@ Every diagram begins with a short purpose callout explaining:
 
 The durable outputs use Markdown tables and Mermaid. Interactive visuals are created only when explicitly requested. Default maxima are two diagrams in each paired note and three in the Case Lab.
 
-Semantic emphasis has stable meaning: **bold** for core claims or mechanisms, `<mark>highlight</mark>` for directly reusable research findings, <u>underline</u> for boundaries or recurrent misreadings, and *italics* for wording-sensitive terms. Styling never replaces evidence provenance.
+The opening reading guide defines all simple and mixed provenance labels. A slash means “source material plus analysis,” not a new source type; the preferred practice is to separate source claims from analysis and reserve mixed labels for short syntheses that cannot be split naturally. Semantic emphasis has stable meaning: **bold** for core claims or mechanisms, `<mark>highlight</mark>` for directly reusable research findings, <u>underline</u> for boundaries or recurrent misreadings, and *italics* for wording-sensitive terms. Styling never replaces evidence provenance.
 
 ## Install
 

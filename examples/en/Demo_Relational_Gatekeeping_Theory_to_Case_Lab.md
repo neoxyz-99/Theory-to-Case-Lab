@@ -1,11 +1,10 @@
 # Relational Gatekeeping: Theory-to-Case Lab
 
 > Synthetic teaching example; not a real publication or empirical case.
-> Evidence labels: `[P]` synthetic focal text; `[S]` synthetic reception fixture; `[A]` demonstration application.
 > Related notes: [[Demo_Relational_Gatekeeping_Reading_Note]] · [[Demo_Relational_Gatekeeping_Scholarly_Reception_and_Applications]]
 
 > [!tip] Reading guide
-> **Bold** marks core concepts or mechanisms; <mark>highlight</mark> marks directly reusable findings; <u>underline</u> marks boundaries or misreadings; *italics* preserve wording-sensitive terms. Styling never replaces `[P]`, `[S]`, or `[A]`.
+> `[P]` = synthetic focal text; `[S]` = synthetic reception material; `[A]` = demonstration analysis or application. `[P/A]` and `[S/A]` mark short mixed claims; the slash means “source material plus analysis,” not a new source type. Prefer separating source claims from analysis, and use labels only where provenance could otherwise be unclear. **Bold** marks core concepts or mechanisms; <mark>highlight</mark> marks directly reusable findings; <u>underline</u> marks boundaries or misreadings; *italics* preserve wording-sensitive terms. Styling never replaces provenance.
 
 ## Basic Information
 

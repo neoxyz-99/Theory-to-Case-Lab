@@ -5,7 +5,7 @@ Contributions that improve theory reconstruction, humanities and social-science 
 ## Before opening a pull request
 
 1. Keep `SKILL.md` focused on routing, non-obvious constraints, and output contracts. Put conditional detail in `references/` and reusable output structures in `assets/`.
-2. Preserve the distinction between `[P]`, `[S]`, and `[A]`.
+2. Preserve the distinction between `[P]`, `[S]`, and `[A]`; define `[P/A]` and `[S/A]` in the reading guide, use mixed labels only exceptionally, and avoid paragraph-by-paragraph provenance prefixes.
 3. Do not add user documents, copyrighted source texts, private Zotero data, fabricated citations, or examples that could be mistaken for real scholarship.
 4. Keep English and Simplified Chinese templates behaviorally aligned; wording need not be mechanically identical.
 5. Explain the purpose and inferential limit before every new visual.
