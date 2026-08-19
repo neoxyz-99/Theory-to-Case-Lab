@@ -95,6 +95,7 @@ PLACEHOLDER_PATTERNS = (
 NONLEGACY_PLACEHOLDERS = (r"\[\[\s*\]\]",)
 METADATA_KEYS = ("Author", "Year", "Title", "Type")
 VISUAL_LIMITS = {"reading": 2, "reception": 2, "case-lab": 3}
+EVIDENCE_LEGEND_LABELS = ("[P]", "[S]", "[A]", "[P/A]", "[S/A]")
 
 
 def headings(markdown: str) -> list[str]:
@@ -123,6 +124,15 @@ def extract_wikilinks(markdown: str) -> set[str]:
 
 def mermaid_blocks(markdown: str) -> list[re.Match[str]]:
     return list(re.finditer(r"```mermaid\s*\n(.*?)```", markdown, re.S | re.I))
+
+
+def reading_guide(markdown: str) -> str:
+    match = re.search(
+        r">\s*\[!tip\]\s*(?:Reading guide|阅读提示)(?P<body>(?:\n>[^\n]*)+)",
+        markdown,
+        re.I,
+    )
+    return match.group(0) if match else ""
 
 
 def validate_visuals(markdown: str, kind: str) -> dict[str, Any]:
@@ -163,9 +173,28 @@ def validate_visuals(markdown: str, kind: str) -> dict[str, Any]:
         warnings.append(f"Contains {len(blocks)} diagrams; default limit for {kind} is {limit}.")
 
     uses_semantic_emphasis = bool(re.search(r"<mark>|<u>|\*\*[^*]+\*\*", markdown, re.I))
-    has_reading_guide = bool(re.search(r"\[!tip\]\s*(?:Reading guide|阅读提示)", markdown, re.I))
+    guide = reading_guide(markdown)
+    has_reading_guide = bool(guide)
     if uses_semantic_emphasis and kind != "legacy" and not has_reading_guide:
         errors.append("Semantic emphasis is used without a Reading guide / 阅读提示 callout.")
+
+    missing_legend_labels = [label for label in EVIDENCE_LEGEND_LABELS if label not in guide]
+    if kind != "legacy" and missing_legend_labels:
+        errors.append(
+            "Reading guide does not define all evidence labels: "
+            + ", ".join(missing_legend_labels)
+        )
+
+    leading_markers = len(
+        re.findall(
+            r"(?m)^(?:[-*]\s+|\d+\.\s+)?`?\[(?:P|S|A)(?:/[PSA])?\]`?\s*",
+            markdown,
+        )
+    )
+    if leading_markers > 18:
+        warnings.append(
+            f"Contains {leading_markers} paragraph/list-leading evidence labels; consider section-level provenance or a claim-evidence table for lower visual noise."
+        )
 
     for line_number, line in enumerate(markdown.splitlines(), start=1):
         if len(line) > 180 and re.fullmatch(r"\s*(?:<mark>.*</mark>|<u>.*</u>|\*\*.*\*\*)\s*", line):
@@ -176,6 +205,9 @@ def validate_visuals(markdown: str, kind: str) -> dict[str, Any]:
         "errors": errors,
         "warnings": warnings,
         "has_reading_guide": has_reading_guide,
+        "evidence_legend_complete": not missing_legend_labels,
+        "missing_evidence_legend_labels": missing_legend_labels,
+        "leading_evidence_markers": leading_markers,
     }
 
 
