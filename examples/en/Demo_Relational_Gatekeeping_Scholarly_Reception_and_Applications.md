@@ -1,11 +1,10 @@
 # Relational Gatekeeping: Scholarly Reception and Applications
 
 > Synthetic teaching example; every reception source below is fictional and not citable.
-> Evidence labels: `[S]` synthetic reception fixture; `[A]` demonstration synthesis.
 > Related notes: [[Demo_Relational_Gatekeeping_Reading_Note]] · [[Demo_Relational_Gatekeeping_Theory_to_Case_Lab]]
 
 > [!tip] Reading guide
-> **Bold** marks core positions or conclusions; <mark>highlight</mark> marks directly reusable findings; <u>underline</u> marks boundaries or misreadings; *italics* preserve wording-sensitive terms. Styling never replaces `[S]` or `[A]`.
+> `[P]` = synthetic focal text; `[S]` = synthetic reception material; `[A]` = demonstration analysis or application. `[P/A]` and `[S/A]` mark short mixed claims; the slash means “source material plus analysis,” not a new source type. Prefer separating source claims from analysis, and use labels only where provenance could otherwise be unclear. **Bold** marks core positions or conclusions; <mark>highlight</mark> marks directly reusable findings; <u>underline</u> marks boundaries or misreadings; *italics* preserve wording-sensitive terms. Styling never replaces provenance.
 
 ## Basic Information
 
