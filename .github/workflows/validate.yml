@@ -1,0 +1,36 @@
+name: Validate skill
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile validator
+        run: python -m py_compile skills/analyze-theory/scripts/validate_theory_dossier.py
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate English example bundle
+        run: >-
+          python skills/analyze-theory/scripts/validate_theory_dossier.py
+          --reading examples/en/Demo_Relational_Gatekeeping_Reading_Note.md
+          --reception examples/en/Demo_Relational_Gatekeeping_Scholarly_Reception_and_Applications.md
+          --case-lab examples/en/Demo_Relational_Gatekeeping_Theory_to_Case_Lab.md
+      - name: Validate Chinese example bundle
+        run: >-
+          python skills/analyze-theory/scripts/validate_theory_dossier.py
+          --reading examples/zh-CN/示例_关系守门_文献解读.md
+          --reception examples/zh-CN/示例_关系守门_学界评价与理论应用.md
+          --case-lab examples/zh-CN/示例_关系守门_理论解释案例实验室.md

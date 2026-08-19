@@ -1,0 +1,4 @@
+interface:
+  display_name: "Theory-to-Case Lab"
+  short_description: "Reconstruct theories, map debates, and explain cases"
+  default_prompt: "Use $analyze-theory to create theory notes, map scholarly reception, and explain how this theory applies to my case."

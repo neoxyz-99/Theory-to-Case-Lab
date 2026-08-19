@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this skill in your research workflow, please cite it as software."
+title: "Theory-to-Case Lab"
+version: "1.0.0"
+date-released: 2026-08-19
+license: MIT
+repository-code: "https://github.com/neoxyz-99/Theory-to-Case-Lab"
+authors:
+  - family-names: "neoxyz-99"

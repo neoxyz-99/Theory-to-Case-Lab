@@ -1,0 +1,19 @@
+name: Feature request
+description: Propose an improvement to theory analysis or scholarly workflow.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Research need
+      description: Which humanities or social-science task is not adequately supported?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Desired behavior
+      description: Describe the observable output or decision that should improve.
+    validations:
+      required: true
